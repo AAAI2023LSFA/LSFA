@@ -193,11 +193,6 @@ def da4mltc(args):
     else:
         args.check_pt_model_path = args.pretrained_path
     model.load_state_dict(torch.load(args.check_pt_model_path, map_location=args.device))
-    #Predicting
-    logger.info('Predicting')
-    result = test.test(model, test_loader, mlb, args)
-    logger.info(f'Final Test Result: {result}')
-    assert 0
 
     #Collecting
     if args.pre_feature_dict == False:
