@@ -16,7 +16,7 @@ All datasets are derived from [LSAN](https://aclanthology.org/D19-1044/) and [LD
 We take our processed dataset EUR-Lex as an example. 
 * [EUR-Lex](https://drive.google.com/drive/folders/1KWApv9kzihiGn4ZUi-eTtWj2Olv5YSrE?usp=sharing)
 
-## Reproducibility:  
+## Reproducibility   
 ### Pre-processing
 If you want to use other datasets, please use the following command for preprocessing first:  
 ```bash
