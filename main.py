@@ -50,7 +50,7 @@ def main():
                         help="train the embedding layer")
     parser.add_argument('--emb_size', type=int, default=300,
                         help="embedding size")
-    parser.add_argument('--hidden_size', type=int, default=150,
+    parser.add_argument('--hidden_size', type=int, default=256,
                         help="hideden size of LSTM")
     parser.add_argument('--feat_size', type=int, default=300,
                         help="feature size of LSFL")
@@ -74,7 +74,7 @@ def main():
                         help="use swa strategy")
     parser.add_argument('--gradient_clip_value', type=int, default=5.0,
                         help="gradient clip")
-    parser.add_argument('--seed', type=int, default=42,
+    parser.add_argument('--seed', type=int, default=100,
                         help="random seed for initialization")
     parser.add_argument('--test_each_epoch', type=bool, default=False,#True False
                         help="test performance on each epoch")
@@ -110,7 +110,7 @@ def main():
     #contrastive
     parser.add_argument('--contrastive_mode', type=bool, default=True , #True, False
                         help="use contrastive learning")
-    parser.add_argument('--contrastive_warmup', type=int, default=40,
+    parser.add_argument('--contrastive_warmup', type=int, default=25,
                         help="begin epoch of contrastive learning")
     parser.add_argument('--contrastive_weight', type=float, default=0.1,
                         help="weight of contrastive learning")
